@@ -3,3 +3,7 @@
 *.log
 *.aux
 *.bst
+!fig/*.pdf
+
+
+
