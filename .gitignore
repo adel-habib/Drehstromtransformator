@@ -1,9 +1,7 @@
-*.pdf 
 *.out
 *.log
 *.aux
 *.bst
-!fig/*.pdf
 
 
 

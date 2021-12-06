@@ -1,0 +1,36 @@
+
+\begin{figure}[H]
+    \centering
+    \begin{circuitikz}[thick]
+
+    \coordinate (A) at (0,0);
+
+    \draw (A) to[R,*-,name=R1] ++(3,0) 
+    to[european inductor,name=X1] ++ (2,0) 
+    to[short] ++(1cm,0) coordinate (m);
+    
+    \draw (m) to[short,-*] ++(0,-1cm) coordinate (md);
+    \draw (md) -- ++ (1.5cm,0) to[european inductor,name=X2] ++(0,-2cm) to[short,-*] ++(-1.5cm,0) coordinate (mdd);
+    \draw (md) -- ++ (-1.5cm,0) to[R,name=R2] ++(0,-2cm) to[short,-*] ++(1.5cm,0);
+    \draw (mdd) -- ++(0,-1cm) coordinate (d) to[short,-*] (d-|A) coordinate (B);
+    \draw (12,0) coordinate (C) to[R,name=R3,*-] ++(-3,0)
+     to[european inductor,name=X3,mirror] ++ (-2,0) to[short] ++(-1,0);
+    \draw (d) to[short,-*] (d-|C);
+    \draw (A) to[open,v=U] (B);
+    \draw (C) to[open,v^=U] (C|-B);
+
+    \node[above] at (R1.n){$R_1 = \SI{0.28}{\ohm}$};
+    \node[left,xshift=-0.5cm] at (R2.n){$R_{Fe} = \SI{2.55}{\kilo\ohm}$};
+    \node[above] at (R3.s){$R^\prime_2 = \SI{0.83}{\ohm}$};
+    \node[above] at (X1.n){$ X_{\sigma 1} = \SI{0.5}{\ohm}$ };
+    \node[right] at (X2.n){$X_h = \SI{0.49}{\kilo\ohm}$};
+    \node[above] at (X3.n){$X^\prime_{\sigma 2} = \SI{0.68}{\ohm}$};
+
+
+\end{circuitikz}
+    \caption{THE EQUIVI CIIIRKKUIT}
+    \label{fig:my_label}
+\end{figure}
+
+
+

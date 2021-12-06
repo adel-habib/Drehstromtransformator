@@ -1,42 +1,40 @@
-\documentclass[sigconf]{acmart}
-\input{setup}
+\documentclass[11pt]{article}
 \input{preamble}
 
+% Use option lineno for line numbers 
+
+
 \begin{document}
-
-%TODO: Title 
-\title{Drehstromtransformator}
-%TODO: Subitle 
-\subtitle{Elektrische Energieversorgung}
-
-%TODO authors 
-\author{Ahmed Habib, Lukas Nöller}
-
-%TODO affiliation 
-%\affiliation{HTW Dresden}
-%\email{email@somedonain}
-
-%TODO: change language according to class 
 \selectlanguage{ngerman} 
+%\flushbottom
+%\maketitle
+%\thispagestyle{empty}
 
-%TODO: supervisors
-\supervisors{Prof. Dr.-Ing. Gerd Valtin }
+\section{Introduction}
 
-\maketitle
-
-
-\section{Enführung}
-%\label{sec:introduction}
-\input{tex/introduction}
+\subsection{Widerstandsmessung}
+\input{tex/widerstandsmessung}
 
 
-\section{Experimental Evaluation}
-\label{sec:evaluation}
-\input{tex/evaluation}
+%TODO LEERLAUF VEERSUCH 
+\subsection{Leerlaufversuch}
+\input{tex/leerlauf}
 
-\section{Conclusion}
-\label {sec:conclusion}
-\input{tex/conclusion.tex}
+%TODO KS VEERSUCH 
 
+\subsection{Kurzschlussversuch}
+\input{tex/kurzschluss}
+
+\subsection{Ohmische Belastung}
+\input{tex/ohm}
+
+\subsection{Induktive Belastung}
+\input{tex/induktiv}
+
+\subsection{Kapazitive Belastung}
+\input{tex/Kapazitiv}
+
+\subsection{Ersatzschaltbilder und Zeigerbilder}
+\input{tex/ersatz}
 
 \end{document}

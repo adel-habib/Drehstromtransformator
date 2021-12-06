@@ -1,11 +1,11 @@
 \usepackage{xspace}
 \usepackage[ngerman,english]{babel}
-\usepackage{graphicx,lipsum}
-\usepackage[europeanvoltages,
-europeancurrents,
+\usepackage[europeancurrents,
 europeanresistors,
 americaninductors,
 smartlabels,siunitx,straightvoltages]{circuitikz}
+ \usepackage[normalem]{ulem}
+ \useunder{\uline}{\ul}{}
 \usepackage{float}
 %Here we define a marco: The \xspace ensures correct spacing, i.e. insert space before next word, but not before period or comma.
 \newcommand{\paxos}{\textsc{Paxos}\xspace}
@@ -14,4 +14,9 @@ smartlabels,siunitx,straightvoltages]{circuitikz}
 \usepackage{tikz}
 \usepackage{pgfplots}
 \pgfplotsset{compat=newest}
-
+\usepackage{booktabs}
+%\usepackage[table,xcdraw]{xcolor}
+\usepackage{subcaption}
+\usepackage[european resistors,american inductors,siunitx]{circuitikz}
+\usepackage{amsmath}
+\usepackage[tmargin=1in,bmargin=1in,lmargin=1.25in,rmargin=1.25in]{geometry}
